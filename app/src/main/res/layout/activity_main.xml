@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/app_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/heading"
+        />
+
+
+
+    <TextView
+        android:id="@+id/labelInputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/name"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/subtitle"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/labelInputName"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/inputFieldOuter"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/labelTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/telephone"
+        app:layout_constraintTop_toBottomOf="@id/inputName"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/subtitle"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@id/labelTelephone"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:helperTextEnabled="true"
+        app:helperText="@string/telephoneExample"
+        app:prefixText="+62"
+        style="@style/inputFieldOuter"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/labelInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/subtitle"
+
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/labelInputEmail"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:helperTextEnabled="true"
+        app:helperText="@string/emailExample"
+        app:expandedHintEnabled="true"
+        style="@style/inputFieldOuter"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/labelInputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/subtitle"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/labelInputPassword"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:endIconMode="password_toggle"
+        style="@style/inputFieldOuter"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/labelInputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/address"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/subtitle"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/labelInputAddress"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/inputFieldOuter"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="top"
+            android:inputType="textMultiLine"
+
+            android:maxLines="3"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/titleJenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="Jenis Kelamin"
+        app:layout_constraintTop_toBottomOf="@id/inputAlamat"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintWidth_percent=".5"
+        style="@style/subtitle"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/jenisKelamin"
+        android:checkedButton="@+id/radio_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_extra_small"
+        android:layout_marginLeft="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/inputAlamat"
+        app:layout_constraintLeft_toRightOf="@id/titleJenisKelamin"
+        app:layout_constraintWidth_percent=".5"
+
+        >
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/man"
+            android:textAppearance="@style/body"
+            style="@style/radioButtonDefault"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/women"
+            android:textAppearance="@style/body"
+            style="@style/radioButtonDefault"
+
+            />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/syaratDanKetentuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="true"
+        android:text="@string/aggreement"
+        app:layout_constraintTop_toBottomOf="@id/jenisKelamin"
+        app:layout_constraintLeft_toRightOf="@id/titleJenisKelamin"
+        style="@style/checkboxesDefault"
+        android:textAppearance="@style/body"
+        />
+
+    <Button
+        android:id="@+id/containedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintTop_toBottomOf="@id/syaratDanKetentuan"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        style="@style/buttonDefault"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

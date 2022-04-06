@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="radioButtonDefault">
+        <item name="android:buttonTint">@color/purple_blue</item>
+    </style>
+</resources>

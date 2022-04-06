@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FormRegister</string>
+    <string name="formTitle">Register</string>
+    <string name="name">Nama</string>
+    <string name="telephone">Telepon</string>
+    <string name="telephoneExample">Contoh : 858123412312</string>
+    <string name="email">Email</string>
+    <string name="emailExample">Contoh : Arung@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="address">Alamat</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="man">Laki - Laki</string>
+    <string name="women">Perempuan</string>
+    <string name="submit">Submit</string>
+    <string name="aggreement">Saya setuju dengan berbagai ketentuan yang ada</string>
+</resources>

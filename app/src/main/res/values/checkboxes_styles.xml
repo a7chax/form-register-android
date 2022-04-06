@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="checkboxesDefault">
+        <item name="buttonTint">@color/purple_blue</item>
+    </style>
+</resources>

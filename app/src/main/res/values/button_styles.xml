@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonDefault">
+        <item name="android:height">@dimen/buttonHeightDefault</item>
+        <item name="android:textAppearance">@style/subtitle</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/defaultCornerRadius</item>
+        <item name="backgroundTint">@color/light_blue</item>
+    </style>
+</resources>

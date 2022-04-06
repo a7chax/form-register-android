@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="inputFieldOuter" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeWidth">@dimen/zeroDp</item>
+        <item name="boxStrokeColor">@color/purple_blue_dark</item>
+        <item name="boxStrokeWidthFocused">@dimen/border_width_input</item>
+    </style>
+</resources>

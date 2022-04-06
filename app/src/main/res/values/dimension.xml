@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zeroDp">0dp</dimen>
+    <dimen name="spacing_extra_small">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="app_padding">16dp</dimen>
+
+    <dimen name="border_width_input">1dp</dimen>
+
+    <dimen name="heading">34.sp</dimen>
+    <dimen name="subtitle">14.sp</dimen>
+    <dimen name="body">14.sp</dimen>
+
+    <dimen name="buttonHeightDefault">40dp</dimen>
+
+    <dimen name="defaultCornerRadius">25dp</dimen>
+</resources>
