@@ -3,4 +3,14 @@
     <style name="checkboxesDefault">
         <item name="buttonTint">@color/purple_blue</item>
     </style>
+
+
+    <style name="ThemeOverlay.App.Checkbox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSecondary">@color/purple_blue</item>
+    </style>
+
+    <style name="Widget.App.Checkbox" parent="">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Checkbox</item>
+    </style>
 </resources>
